@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="change()">Click-Me</button>
+</body>
+<script>
+    
+
+    function change(){
+        let age=prompt("enter the age group");
+
+        if(age<18 && age>12){
+            alert("teenage");
+        }
+        else if(age<12 && age>5){
+        alert("younger");
+    }
+    else if(age>18 && age<60){
+        alert("adult");
+    }
+    else if(age<5 && age>0){
+alert("child");
+    }
+    else{
+        alert("senior citzens");
+    }
+    }
+
+    
+    
+</script>
+
+</html>

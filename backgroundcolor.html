@@ -1,0 +1,29 @@
+.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Changer</title>
+    <style>
+        .ankush {
+            height: 100vh;
+            width: 100vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="ankush">
+        <button onclick="change()">click me</button>
+    </div>
+
+    <script>
+        function change() {
+            const element = document.querySelector('.ankush');
+            const colors = ["red", "blue", "green", "yellow", "pink", "purple", "orange"];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            element.style.backgroundColor = randomColor;
+        }
+    </script>
+</body>
+</html>
